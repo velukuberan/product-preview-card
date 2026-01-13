@@ -1,0 +1,209 @@
+:root {
+    /* Color */
+    --color-black: hsl(212, 21%, 14%);
+    --color-grey: hsl(228, 12%, 48%);
+    --color-cream: hsl(30, 38%, 92%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-green-500: hsl(158, 36%, 37%);
+    --color-green-700: hsl(158, 42%, 18%);
+
+    /* Spacing */
+    --spacing-50: 0.25rem;  /* 4px */
+    --spacing-100: 0.5rem;  /* 8px */
+    --spacing-200: 1rem;    /* 16px */
+    --spacing-300: 1.5rem;  /* 24px */
+    --spacing-400: 2rem;    /* 32px */
+    --spacing-500: 2.5rem;  /* 40px */
+
+    /* Font Families */
+    --font-family-serif: 'Fraunces', serif;
+    --font-family-sans: 'Montserrat', sans-serif;
+
+    /* Font Weights */
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    /* Font Sizes */
+    --font-size-preset-1: 2rem;      /* 32px */
+    --font-size-preset-2: 0.875rem;  /* 14px */
+    --font-size-preset-3: 0.875rem;  /* 14px */
+    --font-size-preset-4: 0.75rem;   /* 12px */
+    --font-size-preset-5: 0.8125rem; /* 13px */
+
+    /* Line Heights */
+    --line-height-preset-1: 1;      /* 100% */
+    --line-height-preset-2: 1.1;    /* 110% */
+    --line-height-preset-3: 1.6;    /* 160% */
+    --line-height-preset-4: 1.2;    /* 120% */
+    --line-height-preset-5: 1.2;    /* 120% */
+
+    /* Letter Spacing */
+    --letter-spacing-preset-1: 0;
+    --letter-spacing-preset-2: 0;
+    --letter-spacing-preset-3: 0;
+    --letter-spacing-preset-4: 0.3125rem; /* 5px */
+    --letter-spacing-preset-5: 0;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background: var(--color-cream); 
+}
+
+/* text-preset-1: Fraunces Bold - Headings */
+.text-preset-1 {
+    font-family: var(--font-family-serif);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-preset-1);
+    line-height: var(--line-height-preset-1);
+    letter-spacing: var(--letter-spacing-preset-1);
+}
+
+/* text-preset-2: Montserrat Bold - Subheadings */
+.text-preset-2 {
+    font-family: var(--font-family-sans);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-preset-2);
+    line-height: var(--line-height-preset-2);
+    letter-spacing: var(--letter-spacing-preset-2);
+}
+
+/* text-preset-3: Montserrat Medium - Body Text */
+.text-preset-3 {
+    font-family: var(--font-family-sans);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-preset-3);
+    line-height: var(--line-height-preset-3);
+    letter-spacing: var(--letter-spacing-preset-3);
+}
+
+/* text-preset-4: Montserrat Medium - Labels/Caps */
+.text-preset-4 {
+    font-family: var(--font-family-sans);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-preset-4);
+    line-height: var(--line-height-preset-4);
+    letter-spacing: var(--letter-spacing-preset-4);
+    text-transform: uppercase;
+}
+
+/* text-preset-5: Montserrat Medium - Small Text */
+.text-preset-5 {
+    font-family: var(--font-family-sans);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-preset-5);
+    line-height: var(--line-height-preset-5);
+    letter-spacing: var(--letter-spacing-preset-5);
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+.text-black {
+    color: var(--color-black);
+}
+
+.text-grey {
+    color: var(--color-grey);
+}
+
+.text-green-500 {
+    color: var(--color-green-500);
+}
+
+.text-bg-green-500 {
+    background-color: var(--color-green-500);
+}
+
+.text-bg-green-700 {
+    background-color: var(--color-green-700);
+}
+
+.text-strike {
+    text-decoration: line-through;
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    background-color: var(--color-white);
+    width: 21.875rem;
+    border-radius: var(--spacing-100); 
+    display: flex;
+    flex-direction: column;
+}
+
+.card__img {
+    display: block;
+    height: 20.25rem;
+    border-radius: var(--spacing-100) 
+    var(--spacing-100) 0 0;
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-400);
+    padding: var(--spacing-400);
+}
+
+.card__title {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-300);
+}
+
+.card__title h1 {
+    color: var(--color-black);
+}
+
+.card__price {
+    display: flex;
+    gap: var(--spacing-200);
+    align-items: center;
+}
+
+.card__btn {
+    cursor: pointer;
+    border: 0;
+    display: flex;
+    gap: var(--spacing-100);
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-300) var(--spacing-200);
+    border-radius: var(--spacing-100);
+}
+
+.card__btn:hover {
+    background-color: var(--color-green-700);
+}
+
+.card__btn img {
+    width: 1.125rem;
+    height: 1.125rem;
+}
+
+@media screen and (min-width: 48rem) {
+    .card {
+        width: 37.5rem;
+        flex-direction: row;
+    }
+
+    .card__img {
+        width: 18.75rem;
+        height: auto;
+        border-radius: var(--spacing-100) 0 
+        0 var(--spacing-100);
+    }
+}

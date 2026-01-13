@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Product preview card component</title>
-</head>
-<body>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Frontend Mentor | Product preview card component</title>
+    </head>
+    <body>
+        <main>
+            <article class="card">
+                <img src="./images/image-product-desktop.jpg" alt="Gabrielle Essence Eau De Parfum" class="card__img">
+                <div class="card__body">
+                    <div class="card__title">
+                        <span class="text-preset-4 text-grey">Perfume</span>
+                        <h1 class="text-preset-1 text-black">Gabrielle Essence Eau De Parfum</h1>
+                        <p class="text-preset-3 text-grey">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+                    </div>
+                    <div class="card__price">
+                        <p class="text-preset-1 text-green-500">$149.99</p>
+                        <p class="text-preset-5 text-grey text-strike">$169.99</p>
+                    </div>
+                    <button class="card__btn text-preset-2 text-bg-green-500 text-white">
+                        <img src="./images/icon-cart.svg" alt="Shopping cart" aria-hidden="true">
+                        Add to cart
+                    </button>
+                </div>
+            </article>
+        </main>
+    </body>
 </html>
