@@ -36,4 +36,4 @@ This component displays a perfume product card with image, description, pricing,
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/velukuberan)
+- Frontend Mentor - [@velukuberan](https://www.frontendmentor.io/profile/velukuberan)
